@@ -1,0 +1,8 @@
+@use "./normalize";
+@use "./variables";
+@use "./components/navbar";
+@use "./pages/inicio";
+
+body{
+    font-family: variables.$font-poppins;
+}

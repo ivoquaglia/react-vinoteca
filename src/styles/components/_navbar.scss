@@ -1,0 +1,101 @@
+@use "../variables";
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: variables.$color-blanco;
+
+    .nav1-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+
+        .nav1-logo {
+            width: 140px;
+            height: 80px;
+
+            .nav1-foto {
+                object-fit: cover;
+            }
+        }
+
+        .nav1-li {
+            display: flex;
+            gap: 80px;
+
+            .nav1-a {
+                margin: auto;
+                text-decoration: none;
+                color: #000;
+
+                .favorito {
+                    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+
+                    &:hover {
+                        filter: invert(19%) sepia(17%) saturate(5381%) hue-rotate(288deg) brightness(92%) contrast(97%);
+                    }
+                }
+
+                .carrito {
+                    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+
+                    &:hover {
+                        filter: invert(19%) sepia(17%) saturate(5381%) hue-rotate(288deg) brightness(92%) contrast(97%);
+                    }
+                }
+            }
+
+            .nav1-a-inicio {
+                background-color: variables.$color-blanco;
+                font-weight: 700;
+                padding: 10px;
+                border-radius: 9px;
+                border: 2px solid variables.$color-vino;
+                color: variables.$color-vino;
+
+                &:hover {
+                    background-color: variables.$color-vino;
+                    color: #fff;
+                    border: 2px solid variables.$color-vino;
+                }
+
+            }
+        }
+    }
+
+    .nav2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        border-top: 0.5px solid #00000056;
+        border-bottom: 0.5px solid #00000056;
+
+        .nav2-li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+
+            .nav2-a {
+                font-weight: 700;
+                text-decoration: none;
+                color: #000;
+                padding: 6px;
+                border-radius: 7px;
+
+                &:hover {
+                    color: variables.$color-vino;
+                }
+            }
+        }
+    }
+
+}
+
