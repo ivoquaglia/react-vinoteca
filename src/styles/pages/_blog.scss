@@ -1,0 +1,121 @@
+@use "../variables";
+
+.blog-main {
+    background-color: variables.$color-baige;
+    height: 1500px;
+    justify-content: center;
+    align-items: center;
+
+    .blog-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 1500px;
+
+        .blog-h2 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: variables.$color-vino;
+        }
+
+        .blog-div {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 50px;
+
+            .blog-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                cursor: pointer;
+                padding: 20px;
+                width: 600px;
+                height: 550px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                gap: 10px;
+                box-shadow: 0px 0px 5px #000;
+                background-color: variables.$color-blanco;
+                border-radius: 10px;
+                z-index: 0;
+
+                &:hover{
+                    box-shadow: 0px 0px 20px variables.$color-vino;
+                }
+
+                .close {
+                    display: none;
+
+                }
+
+                .blog-h3 {
+                    font-size: 1.1rem;
+                    text-align: center;
+                }
+
+                .blog-img {
+                    width: 450px;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                .blog-p {
+                    font-size: .9rem;
+                    text-align: center;
+                    width: 90%;
+                    height: auto;
+                    overflow: hidden;
+                }
+            }
+
+            .blog-active {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                gap: 10px;
+                position: absolute;
+                box-shadow: 0px 0px 5px #000;
+                border-radius: 10px;
+                width: 80%;
+                height: fit-content;
+                margin: auto;
+                z-index: 1;
+                background-color: variables.$color-baige;
+                padding:50px 0;
+
+                .blog-img {
+                    padding: 30px 0;
+                    width: 700px;
+                    height: 600px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                .blog-p {
+                    font-size: .9rem;
+                    text-align: left;
+                    width: 90%;
+                    height: auto;
+                    overflow: none;
+                    height: 100%;
+                }
+
+                .close {
+                    display: inline;
+                    cursor: pointer;
+                    margin-left: 80%;
+
+                }
+            }
+        }
+    }
+}
