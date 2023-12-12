@@ -1,0 +1,72 @@
+@use "../variables";
+
+.nosotros-main{
+    background-color: variables.$color-baige;
+
+    .nosotros-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+        gap: 50px;
+
+        .nosotros-div{
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 60px;
+            gap: 50px;
+
+
+            .nosotros-h3{
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: variables.$color-negro;
+            }
+            .nosotros-p{
+                width: 60%;
+                font-size: 1.3rem;
+                color: variables.$color-vino;
+            }
+        }
+
+        .nosotros-div2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+            padding: 50px 0;
+
+            .n-div2-img{
+                width: 500px;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px variables.$color-blanco;
+            }
+
+            .n-conteiner{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 500px;
+                height: 400px;
+
+                .n-h4{
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    color: variables.$color-vino
+                }
+                .n-p{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: variables.$color-negro
+                }
+            }
+        }
+    }
+}

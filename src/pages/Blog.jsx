@@ -17,12 +17,6 @@ export const Blog = () => {
 
     const [active, setActive] = useState(inicialState)
 
-    const handleClose = (name, boolean) => {
-        setActive({
-            ...active,
-            [name]: boolean
-        })
-    }
 
     const handleOpen = (name, boolean) => {
         setActive({
